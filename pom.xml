@@ -129,6 +129,16 @@
 			</dependency>
 			<dependency>
 				<groupId>org.spiderflow</groupId>
+				<artifactId>spider-flow-security</artifactId>
+				<version>${spider-flow.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.spiderflow</groupId>
+				<artifactId>spider-flow-redis</artifactId>
+				<version>${spider-flow.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.spiderflow</groupId>
 				<artifactId>spider-flow-selenium</artifactId>
 				<version>${spider-flow.version}</version>
 			</dependency>
@@ -167,6 +177,8 @@
 	<modules>
 		<module>spider-flow-api</module>
 		<module>spider-flow-core</module>
+		<module>spider-flow-security</module>
+		<module>spider-flow-redis</module>
 		<module>spider-flow-web</module>
 	</modules>
 </project>

@@ -6,9 +6,9 @@
 		<artifactId>spider-flow</artifactId>
 		<version>0.5.0</version>
 	</parent>
-	<artifactId>spider-flow-core</artifactId>
-	<name>spider-flow-core</name>
-	<url>https://gitee.com/jmxd/spider-flow/tree/master/spider-flow-core</url>
+	<artifactId>spider-flow-redis</artifactId>
+	<name>spider-flow-redis</name>
+	<url>https://gitee.com/jmxd/spider-flow-redis</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -16,10 +16,15 @@
 		<dependency>
 			<groupId>org.spiderflow</groupId>
 			<artifactId>spider-flow-api</artifactId>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.spiderflow</groupId>
-			<artifactId>spider-flow-security</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
 		</dependency>
 	</dependencies>
 </project>

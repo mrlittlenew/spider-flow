@@ -40,6 +40,13 @@ public class FileFunctionExecutor implements FunctionExecutor{
 		return f;
 	}
 
+	@Comment("判断文件是否存在")
+	@Example("${file.exists('e:/result.html')}")
+	public static boolean exists(String path) throws IOException{
+		File f = new File(path);
+		return f.exists();
+	}
+
 	@Comment("写出文件")
 	@Example("${file.write('e:/result.html',resp.html,false)}")
 	public static void write(String path,String content,boolean append) throws IOException{
